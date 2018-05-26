@@ -119,7 +119,6 @@ def server_from_config(config, handler_klass=None, plugin_manager=None):
 
 	if not len(addresses):
 		raise errors.KingPhisherError('at least one address to listen on must be specified')
-
 	ssl_certfile = None
 	ssl_keyfile = None
 	if config.has_option('server.ssl_cert'):
